@@ -14,5 +14,13 @@ var starting = function(cb) {
  cb({step1: "first step"}, function2);
 };
 
+var sayHi = function(args, cb){
+	console.log('say hi');
+	
+	cb(function1);
+}
+
 starting(function1);
 
+
+sayHi('doron',starting);
